@@ -1,7 +1,7 @@
 package org.example.lesson3
 
 fun main(){
-    var firstName = "Татьяна"
+    val firstName = "Татьяна"
     var secondName = "Андреева"
     val patronymic = "Сергеевна"
     var age = 20
