@@ -5,10 +5,10 @@ fun main(){
     var playerMove = "D2-D4;0"
     val parts = playerMove.split("-",";")
 
-    for (part in parts){
-      if (part.length>0){
-          println(part)
-      }
+    println("""
+        Откуда: ${parts[0]}
+        Куда: ${parts[1]}
+        Номер хода: ${parts[2]}
+    """.trimIndent())
 
-    }
 }
