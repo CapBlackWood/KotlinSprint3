@@ -1,17 +1,14 @@
 package org.example.lesson1
 
-import java.sql.Time
-
 const val secondInMinutesAndMinutesInHours = 60
-fun main(){
+fun main() {
     var seconds = 6480
-    var minute = seconds/secondInMinutesAndMinutesInHours
-    val hour = minute/secondInMinutesAndMinutesInHours
+    var minute = seconds / secondInMinutesAndMinutesInHours
+    val hour = minute / secondInMinutesAndMinutesInHours
 
-    minute = minute%secondInMinutesAndMinutesInHours
-    seconds = seconds%secondInMinutesAndMinutesInHours
+    minute = minute % secondInMinutesAndMinutesInHours
+    seconds = seconds % secondInMinutesAndMinutesInHours
 
-    val time = Time(hour,minute,seconds)
-    println(time)
+    println("%02d:%02d:%02d".format(hour, minute, seconds))
 
 }
